@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Edi ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    color:white;
+    scroll-behavior:smooth;
+    background:#000;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    background:url("foto1.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">❤️</text></svg>') 16 16, auto;
+}
+.hero::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+.hero h1{
+    position:relative;
+    font-size:3rem;
+    z-index:2;
+    transition:0.5s;
+}
+
+/* Sections */
+section{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    text-align:center;
+    opacity:0;
+    transform:translateY(50px);
+    transition:0.6s;
+}
+
+/* Our Story */
+.our-story p{
+    max-width:700px;
+    margin:10px auto;
+    line-height:1.8;
+    font-size:1.1rem;
+    text-align:center;
+}
+
+/* Gallery */
+.gallery-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    margin-top:30px;
+    width:90%;
+    max-width:900px;
+}
+.gallery-grid img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 0 20px #ff0066;
+    transition:0.4s;
+}
+.gallery-grid img:hover{
+    transform:scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Why I Love You 2 kolona */
+.love-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:15px 40px;
+    max-width:900px;
+    margin:20px auto 0 auto;
+    text-align:left;
+}
+.why-love p::before{
+    content:"❤️ ";
+}
+
+/* Zemrat që bien */
+.heart{
+    position:fixed;
+    top:-10px;
+    font-size:20px;
+    animation:fall 6s linear infinite;
+}
+@keyframes fall{
+    to{ transform:translateY(100vh); }
+}
+
+/* Animacion kur scrollon */
+section.show{
+    opacity:1;
+    transform:translateY(0);
+}
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<div class="hero" id="hero">
+    <h1 id="heroText">Kjo faqe është vetëm për 1 person në botë…</h1>
+</div>
+
+<!-- Our Story -->
+<section class="our-story">
+    <h1>📖 Our Story</h1>
+    <p>U njoftuam pa e ditur që po takoja dikë që do të ndryshonte jetën time.  
+    Prej darkave tona me drita të ngrohta, deri te selfie-t nën drita të vogla, çdo moment me ty është i veçantë dhe i paharrueshëm.  
+    Falë teje, çdo ditë ka buzëqeshje dhe lumturi.</p>
+</section>
+
+<!-- Gallery -->
+<section>
+    <h1>📸 Gallery</h1>
+    <div class="gallery-grid">
+        <img src="foto1.jpg">
+        <img src="foto2.jpg">
+        <img src="foto3.jpg">
+        <img src="foto4.jpg">
+        <img src="foto5.jpg">
+        <img src="foto6.jpg">
+    </div>
+</section>
+
+<!-- Why I Love You 50 arsye -->
+<section class="why-love">
+    <h1>💖 Why I Love You</h1>
+    <div class="love-grid">
+        <p>1. Se më bën me qesh kur jam keq</p>
+        <p>2. Se më kupton pa fol</p>
+        <p>3. Se je budall si un 😭😂</p>
+        <p>4. Se gjithmonë më mbështet</p>
+        <p>5. Se e di se çfarë më pëlqen</p>
+        <p>6. Se di me më surprizu çdo ditë</p>
+        <p>7. Se ke buzëqeshje që ma bën ditën më të mirë</p>
+        <p>8. Se ndan me mua ëndrrat e tua</p>
+        <p>9. Se di me më qetësu kur jam nervoze</p>
+        <p>10. Se je i durueshëm me mua</p>
+        <p>11. Se di me më mbajt për dore kur kam frikë</p>
+        <p>12. Se më bën të ndjej që jam e veçantë</p>
+        <p>13. Se je gjithmonë i sinqertë me mua</p>
+        <p>14. Se di me më bëre të qesh edhe kur jam serioze</p>
+        <p>15. Se kujdesesh për mua çdo ditë</p>
+        <p>16. Se ndan humorin tënd me mua</p>
+        <p>17. Se më inkurajon kur kam dyshime</p>
+        <p>18. Se më mbështet në çdo vendim</p>
+        <p>19. Se di me më mbajt kur jam e dobët</p>
+        <p>20. Se di me më sfidu për të u bërë më e mirë</p>
+        <p>21. Se kujdesesh për ndjenjat e mia</p>
+        <p>22. Se bën çdo ditë të ndjej që jam e dashur</p>
+        <p>23. Se je gjithmonë i gatshëm të ndihmosh</p>
+        <p>24. Se di me më dëgju kur kam nevojë</p>
+        <p>25. Se më bën të ndihem sigurt</p>
+        <p>26. Se ndan ëndrrat e tua me mua</p>
+        <p>27. Se më bën të ndihem e bukur</p>
+        <p>28. Se kujdesesh për shëndetin tim</p>
+        <p>29. Se di me më motivu</p>
+        <p>30. Se ndan me mua çdo aventurë</p>
+        <p>31. Se je kreativ dhe gjithmonë sjell gjëra të reja</p>
+        <p>32. Se më mbështet në çdo sfidë</p>
+        <p>33. Se je besnik dhe i sinqertë</p>
+        <p>34. Se di me më binde që gjithçka është e mundur</p>
+        <p>35. Se bën çdo ditë të ndjej që jam e zgjedhur</p>
+        <p>36. Se di me më bëre të ndihem e fortë</p>
+        <p>37. Se ndan pasionet e tua me mua</p>
+        <p>38. Se më mban të buzëqeshur</p>
+        <p>39. Se kujdesesh për emocionet e mia</p>
+        <p>40. Se di me më surprizu me gjëra të vogla</p>
+        <p>41. Se ndan kohën tënde me mua</p>
+        <p>42. Se më bën të ndihem speciale</p>
+        <p>43. Se di me më kuptu edhe pa fjalë</p>
+        <p>44. Se bën çdo ditë më të bukur</p>
+        <p>45. Se je gjithmonë pozitiv</p>
+        <p>46. Se kujdesesh për marrëdhënien tonë</p>
+        <p>47. Se di me më bërë të ndihem e sigurt</p>
+        <p>48. Se di me më mbajt kur jam e ndjeshme</p>
+        <p>49. Se ndan lumturinë tënde me mua</p>
+        <p>50. Sepse je TI, dhe nuk ka askënd tjetër si ti ❤️</p>
+    </div>
+</section>
+
+<script>
+// Hero text efekt hover
+const hero = document.getElementById("hero");
+const heroText = document.getElementById("heroText");
+
+hero.addEventListener("mouseenter", ()=>{
+    heroText.style.transition = "0.5s";
+    heroText.style.opacity = "0";
+    setTimeout(()=>{
+        heroText.textContent = "Dhe ai person je TI ❤️";
+        heroText.style.opacity = "1";
+        heroText.style.transform = "scale(1.2)";
+        setTimeout(()=>{ heroText.style.transform = "scale(1)"; },300);
+    },300);
+});
+
+hero.addEventListener("mouseleave", ()=>{
+    heroText.style.transition = "0.5s";
+    heroText.style.opacity = "0";
+    setTimeout(()=>{
+        heroText.textContent = "Kjo faqe është vetëm për 1 person në botë…";
+        heroText.style.opacity = "1";
+        heroText.style.transform = "scale(1.2)";
+        setTimeout(()=>{ heroText.style.transform = "scale(1)"; },300);
+    },300);
+});
+
+// Zemrat që bien me size dhe rotate të ndryshëm
+setInterval(()=>{
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.style.left = Math.random()*100 + "vw";
+    heart.style.fontSize = (10 + Math.random()*20) + "px";
+    heart.style.transform = `rotate(${Math.random()*360}deg)`;
+    heart.innerHTML = "❤️";
+    document.body.appendChild(heart);
+    setTimeout(()=>{ heart.remove(); },6000);
+},400);
+
+// Animacion scroll
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+        if (window.scrollY + window.innerHeight > sec.offsetTop + 100){
+            sec.classList.add("show");
+        }
+    });
+});
+</script>
+
+</body>
+</html>
